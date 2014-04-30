@@ -1,8 +1,14 @@
-# Addy's dotfiles.
+# Kent's dotfiles.
 
-This repo contains my personal dotfiles and are heavily based on [paul](https://github.com/paulirish/dotfiles/) and [mathias](https://github.com/mathiasbynens/dotfiles/)'s.
+This repo contains my personal dotfiles and are heavily based on [addy](https://github.com/addyosmani/dotfiles), [paul](https://github.com/paulirish/dotfiles/) and [mathias](https://github.com/mathiasbynens/dotfiles/)'s.
 
 ## Some differences
+
+### Kent's
+
+* Apps specific configuration files. Sublime Text, iTerm
+
+### Addy's
 
 * Browserstack shortcuts which will launch the service and automatically load up a specific OS/Browser pair with your URL. e.g `win7ie8 "http://google.com"`, `ipad3 "http://google.com"`, `ipad3ios6 "http://google.com"`,`androidnexus "http://google.com"` etc. If you would prefer to work locally similarly use `ipad3 "http://localhost:3000"`
 * Dropbox via the command-line support `dropbox upload {localFile} {remoteFile}`, `dropbox download {remoteFile} {localFile}`, `dropbox list` etc.
