@@ -23,8 +23,8 @@ PROMPT='%2~${vcs_info_msg_0_} %F{green}:)%f '
 #PROMPT='${vcs_info_msg_0_}:) '
 
 # Start rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
 # Add homebrew to the completion path
 fpath=("/usr/local/bin/" $fpath)
