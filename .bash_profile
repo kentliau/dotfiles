@@ -52,6 +52,11 @@ function ll(){
   ls -lahp;
 }
 
+# Use it with pipe
+# Example
+# php artisan routes | strip_colors > routes.txt
+alias strip_colors="perl -pe 's/\x1b\[[0-9;]*m//g'"
+
 alias vtop="vtop --theme becca"
 alias top_visual="vtop --theme becca"
 
