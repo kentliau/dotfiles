@@ -61,13 +61,13 @@ alias vtop="vtop --theme becca"
 alias top_visual="vtop --theme becca"
 
 function youtubedl () {
- current_work_directory=$(pwd)
+ #current_work_directory=$(pwd)
  cd ~/Downloads
  youtube-dl -F ${1} --verbose
  echo "Select Format: "
  read format
  youtube-dl -f $format ${1} --verbose
- cd $current_work_directory
+ #cd $current_work_directory
 }
 
 alias ydl="youtubedl"
@@ -95,6 +95,8 @@ function app () {
 }
 
 alias apps="ls /Applications | more"
+
+alias npm_list="sudo npm -g list --depth=0"
 
 alias httpserver="http-server -c-1"
 alias phpserver="php -S localhost:8080"
@@ -175,6 +177,9 @@ alias aboutthismac="archeyjs -c"
 alias ah="forgot"
 alias tool="forgot"
 alias tools="forgot"
+
+
+
 
 
 ##
