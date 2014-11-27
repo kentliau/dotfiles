@@ -39,6 +39,8 @@ alias flush_dns='sudo killall -HUP mDNSResponder; sudo dscacheutil -flushcache'
 
 alias fix_open_with_duplicate='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
 
+alias show_invisible_files='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'
+alias hide_invisible_files='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'
 
 # function helloworld () {
 #  echo "hello with argument" ${1}
