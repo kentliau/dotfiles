@@ -1,5 +1,7 @@
 PATH=$PATH:$HOME/.rvm/bin:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/Cellar/ruby/2.1.1_1/bin:~/.composer/vendor/bin
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 PS1=":) "
 
 # put this in your .bash_profile
