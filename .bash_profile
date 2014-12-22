@@ -102,6 +102,16 @@ alias apps="ls /Applications | more"
 
 alias npm_list="sudo npm -g list --depth=0"
 
+function npm_upgrade() {
+  set -e
+  set -x
+
+  for package in $(npm -g outdated --parseable --depth=0 | cut -d: -f2)
+  do
+      sudo npm -g install "$package"
+  done
+}
+
 alias httpserver="http-server -c-1"
 alias phpserver="php -S localhost:8080"
 
